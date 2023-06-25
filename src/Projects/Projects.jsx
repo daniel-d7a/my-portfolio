@@ -1,4 +1,7 @@
 import ProjectCard from "./ProjectCard";
+import sevenP from "../assets/projects/7p.png";
+import trioDesign from "../assets/projects/trio-design.png";
+import marketing from "../assets/projects/marketing.png";
 
 export default function Projects() {
   return (
@@ -10,21 +13,38 @@ export default function Projects() {
         </span>
       </div>
 
-      <div className="my-10">
+      <div className="my-10 space-y-12 ">
         {[
           {
-            image:
-              "https://images04.nicepage.com/feature/511177/create-any-website-with-powerful-website-builder-website-builder.jpg",
-            name: " fullstack website",
-            technologies: ["html", "css"],
+            image: sevenP,
+            name: "7P main website",
+            desc: "Resposive website for software and marketing company 7P",
+            technologies: ["html", "css", "react", "tailwind", "i18next"],
             codeLink: "",
-            projectLink: "",
+            projectLink: "https://aisevenp.com/home",
           },
-        ].map(({ image, name, technologies, codeLink, projectLink }) => (
+          {
+            image: trioDesign,
+            name: "Trio Design Main website",
+            desc: "Resposive website for a furniture comany Trio Design",
+            technologies: ["html", "css", "react", "tailwind"],
+            codeLink: "https://github.com/daniel-d7a/trio-design",
+            projectLink: "https://radiant-jelly-fef12a.netlify.app/",
+          },
+          {
+            image: marketing,
+            name: "Responsive Marketing Company landing page",
+            desc: "Mockup resposive landing page for a marketing company",
+            technologies: ["html", "css", "react", "tailwind"],
+            codeLink: "https://github.com/daniel-d7a/marketing-landingpage",
+            projectLink: "https://spiffy-quokka-3a3ff7.netlify.app/",
+          },
+        ].map(({ image, name, technologies, codeLink, projectLink, desc }) => (
           <ProjectCard
-            key={name}
+            key={Math.random()}
             image={image}
             name={name}
+            desc={desc}
             technologies={technologies}
             projectLink={projectLink}
             codeLink={codeLink}

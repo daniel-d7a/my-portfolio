@@ -4,12 +4,14 @@ export default function ProjectCard({
   technologies,
   codeLink,
   projectLink,
+  desc
 }) {
   return (
-    <>
+    <div>
       <img src={image} />
       <div className="mt-4">
         <p className="text-2xl font-bold capitalize mb-2">{name}</p>
+        <p className="text-xl mb-2">{desc}</p>
         <div className="text-portfolio-off-white text-lg flex flex-wrap justify-start items-center gap-3 mb-3">
           {technologies.map((tech) => (
             <span className="text-lg font-medium uppercase" key={tech}>
@@ -32,6 +34,6 @@ export default function ProjectCard({
           </a>
         </div>
       </div>
-    </>
+    </div>
   );
 }
