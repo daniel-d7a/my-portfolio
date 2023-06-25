@@ -4,7 +4,7 @@ import NavBar from "../NavBar/Navbar";
 export default function Footer() {
   return (
     <>
-      <footer className="bg-portfolio-gray">
+      <footer className="bg-portfolio-gray pb-10">
         <Contact />
         <NavBar />
       </footer>

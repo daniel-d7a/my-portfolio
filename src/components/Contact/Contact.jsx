@@ -1,6 +1,8 @@
+import Decoration from "../Decoration/Decoration";
+
 export default function Contact() {
   return (
-    <div className="py-16 border-b-2 border-portfolio-off-white mb-10 mx-4">
+    <div className="py-16 border-b-2 border-portfolio-off-white mb-10 mx-4 relative">
       <div className="mb-16 px-1">
         <h3 className="text-center text-4xl text-white mb-5">Contact</h3>
         <p className="text-base text-portfolio-off-white text-center">
@@ -24,6 +26,7 @@ export default function Contact() {
           <textarea
             className="focus:border-portfolio-neon-green outline-none resize-none border-b-2 border-portfolio-off-white py-4 pl-6 w-full bg-transparent"
             placeholder="MESSAGE"
+            rows={4}
           />
         </div>
 
@@ -31,6 +34,7 @@ export default function Contact() {
           SEND MESSAGE
         </button>
       </form>
+      <Decoration position={"bottom-48 -left-1/2"} />
     </div>
   );
 }
