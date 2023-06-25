@@ -7,9 +7,9 @@ export default function ProjectCard({
   desc
 }) {
   return (
-    <div>
+    <div className="">
       <img src={image} />
-      <div className="mt-4">
+      <div className="mt-4 flex flex-col justify-between ">
         <p className="text-2xl font-bold capitalize mb-2">{name}</p>
         <p className="text-xl mb-2">{desc}</p>
         <div className="text-portfolio-off-white text-lg flex flex-wrap justify-start items-center gap-3 mb-3">

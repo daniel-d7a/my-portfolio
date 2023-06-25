@@ -3,15 +3,15 @@ import { FaFacebookF } from "react-icons/fa";
 
 export default function NavBar() {
   return (
-    <nav className="mt-5 mx-24">
+    <nav className="mt-5 mx-24 md:flex md:justify-between ">
       {/* name */}
-      <div className="mb-5 text-2xl font-bold capitalize flex flex-col justify-center items-center">
+      <div className="mb-5 text-2xl md:text-3xl font-bold capitalize flex flex-col justify-center items-center">
         <span>Eyad Alsherif</span>
       </div>
       {/* end of name */}
 
       {/* links */}
-      <div className="flex gap-6 justify-center">
+      <div className="flex gap-6 md:gap-10 justify-center">
         <a
           href="https://github.com/daniel-d7a"
           target="_blank"
